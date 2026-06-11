@@ -1,3 +1,9 @@
+DEVICE = {
+	DESKTOP = 1,
+	LAPTOP = 2
+}
+
 return {
-	LAYOUT = "dwindle"
+	LAYOUT = "dwindle",
+	MYDEVICE = DEVICE.DESKTOP
 }

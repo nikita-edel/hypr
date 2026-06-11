@@ -67,18 +67,18 @@ end
 
 bind(mainMod .. " + SHIFT + F10", dsp.exec_cmd("hyprctl reload"))
 
---[[ bind(mainMod .. " + slash", hl.resize({ x = resizeInc, y = 0, relative = true }), { repeating = true, locked = true })
-bind(mainMod .. " + M", hl.resize({ x = -resizeInc, y = 0, relative = true }), { repeating = true, locked = true })
-bind(mainMod .. " + comma", hl.resize({ x = 0, y = resizeInc, relative = true }), { repeating = true, locked = true })
-bind(mainMod .. " + period", hl.resize({ x = 0, y = -resizeInc, relative = true }), { repeating = true, locked = true }) ]]
+bind(mainMod .. " + slash", dsp.window.resize({ x = resizeInc, y = 0, relative = true }), { repeating = true, locked = true })
+bind(mainMod .. " + M", dsp.window.resize({ x = -resizeInc, y = 0, relative = true }), { repeating = true, locked = true })
+bind(mainMod .. " + comma", dsp.window.resize({ x = 0, y = resizeInc, relative = true }), { repeating = true, locked = true })
+bind(mainMod .. " + period", dsp.window.resize({ x = 0, y = -resizeInc, relative = true }), { repeating = true, locked = true })
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 -- (first 2 with mousebuttons)
--- bind(mouse5, dsp.window.drag(), { mouse = true })
--- bind(mouse4, dsp.window.resize(), { mouse = true })
-
 bind(mainMod .. " + " .. lmb, dsp.window.drag(), { mouse = true })
 bind(mainMod .. " + " .. rmb, dsp.window.resize(), { mouse = true })
+
+bind(mouse4, dsp.window.drag(), { mouse = true })
+bind(mouse5, dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 bind("XF86MonBrightnessUp", dsp.exec_cmd("brightnessctl s " .. brightInc .. "+"), { repeating = true, locked = true })
