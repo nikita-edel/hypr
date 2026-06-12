@@ -16,16 +16,18 @@ local resizeInc = 30 --for resizing window
 
 local terminal = "kitty"
 -- local filemanager = "dolphin"
-local menu = "wofi --show drun"
+local menu = "wofi"
+local menu_exec =  menu .. " --show drun"
 
 local bind = hl.bind
 local dsp = hl.dsp
 
 bind(mainMod .. " + F", dsp.exec_cmd(terminal))
-bind(mainMod .. " + C", dsp.window.kill())
+bind(mainMod .. " + C", dsp.window.close())
+bind(mainMod .. " + SHIFT + C", dsp.window.kill())
 bind(mainMod .. " + O", dsp.window.fullscreen())
 bind(mainMod .. " + V", dsp.window.float({ action = "toggle" }))
-bind(mainMod .. " + SPACE", dsp.exec_cmd(menu))
+bind(mainMod .. " + SPACE", dsp.exec_cmd("pkill " .. menu .. " || " .. menu_exec))
 
 if (vars.LAYOUT == "dwindle") then
 	bind(mainMod .. " + R", dsp.layout("togglesplit"))
