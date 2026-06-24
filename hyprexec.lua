@@ -11,3 +11,7 @@ hl.on("hyprland.start", function()
 		hl.exec_cmd("systemctl --user start hyprland-session.target")
 	end
 end)
+
+--[[ hl.on("window.active", function(w)
+	hl.notification.create({ text = "Window focused: " .. w.title, timeout = 5000, icon = "ok" })
+end) ]]
