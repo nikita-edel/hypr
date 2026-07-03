@@ -1,4 +1,4 @@
-local var = require("hyprglobals")
+local var = require("globals")
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("swaync")

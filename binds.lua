@@ -1,5 +1,5 @@
 local hl = hl
-local vars = require("hyprglobals")
+local vars = require("globals")
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 local mouse4 = "mouse:275" --BTN_SIDE
