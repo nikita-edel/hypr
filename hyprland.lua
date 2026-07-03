@@ -1,4 +1,4 @@
-local vars = require("hyprglobals")
+local vars = require("globals")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
@@ -21,9 +21,9 @@ hl.config({
 
 })
 
-require("hyprexec")
-require("hyprbinds")
-require("hyprinput")
-require("hyprmonitor")
-require("hyprvisual")
-require("hyprwinr")
+require("exec")
+require("binds")
+require("input")
+require("monitor")
+require("visual")
+require("winr")

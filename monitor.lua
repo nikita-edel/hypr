@@ -1,4 +1,4 @@
-local vars = require("hyprglobals")
+local vars = require("globals")
 
 if vars.MYDEVICE == DEVICE.DESKTOP then
 	hl.monitor({
