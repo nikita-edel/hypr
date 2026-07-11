@@ -11,7 +11,7 @@ if vars.MYDEVICE == DEVICE.DESKTOP then
 	hl.monitor({
 		output = "HDMI-A-1",
 		mode = "1920x1080@144.00hz",
-		position = "4480x0",
+		position = "4480x160",
 		scale = "1",
 	})
 
