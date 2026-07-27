@@ -1,4 +1,3 @@
-
 hl.config({
 	decoration = {
 		rounding = 5,
@@ -16,3 +15,18 @@ hl.config({
 })
 
 hl.animation({ leaf = "global", enabled = true, speed = 4, bezier = "default" })
+
+hl.curve("borderFocus", {
+	type = "bezier",
+	points = {
+		{ 0.2, 0.0 },
+		{ 0.0, 1.0 },
+	},
+})
+
+hl.animation({
+	leaf = "border",
+	enabled = true,
+	speed = 10,
+	bezier = "borderFocus",
+})
