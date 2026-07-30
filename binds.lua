@@ -23,6 +23,8 @@ local bind = hl.bind
 local dsp = hl.dsp
 local unbind = hl.unbind
 
+bind(mainMod .. " + ALT + L", dsp.exec_cmd("hyprlock"))
+
 bind(mainMod .. " + F", dsp.exec_cmd(terminal))
 bind(mainMod .. " + C", dsp.window.close())
 bind(mainMod .. " + SHIFT + C", dsp.window.kill())

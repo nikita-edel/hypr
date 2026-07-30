@@ -22,5 +22,18 @@ if vars.MYDEVICE == DEVICE.DESKTOP then
 		scale = "1",
 	})
 elseif vars.MYDEVICE == DEVICE.LAPTOP then
-	-- TODO:
+	hl.monitor({
+		output = "",
+		mode = "highrr",
+		position = "auto",
+		scale = "1"
+	})
+
+	hl.monitor({
+		output = "HDMI-A-1",
+		mode = "1920x1080@60Hz",
+		position = "auto",
+		scale = "1",
+		mirror = "eDP-1",
+	})
 end
