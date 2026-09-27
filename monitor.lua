@@ -1,12 +1,13 @@
 local vars = require("globals")
 
 if vars.MYDEVICE == DEVICE.DESKTOP then
-	--[[ hl.monitor({
-		output = "HDMI-A-1",
+	hl.monitor({
+		output = "HDMI-A-2",
 		mode = "1920x1080@144.00hz",
-		position = "0x0",
+		position = "0x-180",
+		transform = 3,
 		scale = "1",
-	}) ]]
+	})
 
 	hl.monitor({
 		output = "DP-1",
