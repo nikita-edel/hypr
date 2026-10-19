@@ -5,5 +5,5 @@ DEVICE = {
 
 return {
 	LAYOUT = "dwindle",
-	MYDEVICE = DEVICE.DESKTOP,
+	MYDEVICE = DEVICE.LAPTOP,
 }
