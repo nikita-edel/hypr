@@ -14,7 +14,7 @@ local audioInc = "5%" --steps in which to increment volume with built in audio k
 local brightInc = "10%" --for brightness
 local resizeInc = 30 --for resizing window
 
-local terminal = "kitty"
+local terminal = "ghostty"
 -- local filemanager = "dolphin"
 local menu = "wofi"
 local menu_exec = menu .. " --show drun"
