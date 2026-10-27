@@ -55,6 +55,7 @@ bind(mainMod .. " + minus", dsp.exec_cmd("brightnessctl set 10%-"))
 
 bind(mainMod .. " + SHIFT + A", dsp.exec_cmd("hyprshot -m region"))
 bind(mainMod .. " + SHIFT + S", dsp.exec_cmd("hyprshot -m region --clipboard-only"))
+bind("Print", dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 
 --move swap windows
 bind(mainMod .. " + SHIFT + H", dsp.window.move({ direction = "left" }))
