@@ -12,6 +12,10 @@ hl.config({
 	dwindle = {
 		preserve_split = true, -- You probably want this
 	},
+
+	render = {
+		cm_auto_hdr = 0, -- default 1 modesets DP-1 (black flash) on Chrome fullscreen
+	},
 })
 
 hl.animation({ leaf = "global", enabled = true, speed = 4, bezier = "default" })
