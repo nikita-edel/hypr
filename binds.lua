@@ -1,4 +1,3 @@
-local hl = hl
 local vars = require("globals")
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
